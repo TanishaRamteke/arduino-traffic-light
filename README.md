@@ -13,7 +13,7 @@ A traffic light controller built on Arduino Uno and simulated in Tinkercad Circu
 - 1 pushbutton (INPUT_PULLUP, no external resistor)
 
 ## Circuit
-![Circuit](circuit.png)
+![Circuit](Circuit.png)
 
 | Part | Arduino pin |
 |---|---|
