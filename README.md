@@ -25,7 +25,7 @@ A traffic light controller built on Arduino Uno and simulated in Tinkercad Circu
 ## What I learned
 - Choosing resistor values with Ohm's law
 - Using INPUT_PULLUP: a pressed button reads LOW
-- [one thing that went wrong while building and how I fixed it]
+- **Bug I found and fixed:** When the pedestrian button was held down, the green LED seemed to never light after the red phase. Tracing the code showed that green was switched on and immediately off again because the button was still pressed, so it stayed on for only microseconds. I fixed it by adding a 5-second green phase after red, which guarantees traffic always gets visible green time. Now I trace what the code does step by step, and not only the wiring, when something looks wrong.
 
 ## Known limitation (version 1)
 `delay()` freezes the program, so a button press during the red or green phase is missed.
